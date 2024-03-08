@@ -7,19 +7,40 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #e5a2f5;
         }
         .container {
-            width: 80%;
+            width: 85%;
             margin: auto;
             overflow: hidden;
+            color: #571b3d;
+        }
+        body #showcase h1{
+            font-size: 35px;
+        }
+        body h3{
+            font-size: 25px;
+        }
+        body #details h1{
+            font-size: 30px;
+        }
+        body #box{
+            border-block: solid;
+            border-left-style: solid;
+            border-right-style: solid;
+            border-color: #b871c9;
+            width: 90%;
+            margin: auto;
+            padding:10px;
+
+
         }
         header {
-            background: #50b3a2;
+            background: #9221ad;
             color: white;
             padding-top: 30px;
             min-height: 70px;
-            border-bottom: #e8491d 3px solid;
+            border-bottom: #3e71de 4px solid;
         }
         header a {
             color: #ffffff;
@@ -41,6 +62,16 @@
         header #branding {
             float: left;
         }
+        header #links {
+            float: right;
+            
+        }
+        img {
+            width: 45px;
+            height: 45px;
+            padding-right: 5px;
+            padding-left: 5px;
+        }
         header #branding h1 {
             margin: 0;
         }
@@ -49,20 +80,28 @@
             margin-top: 10px;
         }
         header .highlight, header .current a {
-            color: #e8491d;
+            color: #3e71de;
             font-weight: bold;
+        }
+        header .highlight2 {
+            color: #bbe4f0;
         }
         header a:hover {
             color: #ffffff;
             font-weight: bold;
         }
+
     </style>
 </head>
 <body>
     <header>
         <div class="container">
             <div id="branding">
-                <h1><span class="highlight">Eddie</span> Lizarzaburu</h1>
+                <h1><span class="highlight">Eddie</span> <span class = "highlight2">Lizarzaburu</span></h1>
+            </div>
+            <div id ="links">
+                <a href="https://github.com/ELizarza"><img src="imgs/github-mark.svg"></a>
+                <a href="mailto:EddieLizarzaburu@hotmail.com"><img src="imgs/email.png"></a>
             </div>
         </div>
     </header>
@@ -70,25 +109,29 @@
     <div class="container">
         <section id="showcase">
             <h1>Welcome to My Page!</h1>
-            <h3>about me:</h3>
-            <p>I'm an aspiring software engineer from Lincoln California. I'm currently working towards a Bachalor's in Computer Science at UC Merced,
-            my current hobbies include reading, working out and playing games.</p>
+            <h3>About Me:</h3>
+            <div id="box">
+                <p>I'm an aspiring software engineer from Lincoln California. I'm currently working towards a Bachalor's in Computer Science at UC Merced,
+                my current hobbies include reading, working out and playing games.</p>
+            </div>
         </section>
 
         <section id="details">
-            <h2>Current Project Details</h2>
+            <h1>Current Project Details</h1>
+            <div id="box">
             <p>I'm currently working with Open Avenues to develop an interactive web-based 3D Visualization Tool and will be:</p>
             <ul>
                 <li>Working with industry professionals to gain insightful experience</li>
                 <li>Using WebGL and Three.js to render 3D models in a web browser</li>
                 <li>Develop a present a professional demo to showcase</li>
             </ul>
+            </div>
         </section>
 
-        <br><br>
+        <br>
 
         <footer>
-            <h2>More from Me!</h2>
+            <h3>More from Me!</h3>
             <p>Contact Information: <a href="mailto:EddieLizarzaburu@hotmail.com"> Eddielizarzaburu@hotmail.com </a> <p>
             </a>
             <p>More Projects: <a href="https://github.com/ELizarza">My Github</a></p>
