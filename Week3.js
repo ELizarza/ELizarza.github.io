@@ -1,5 +1,6 @@
 // Importing OrbitControls (make sure the path matches the version you are using)
-import { OrbitControls } from 'https://threejs.org/examples/jsm/controls/OrbitControls.js';
+import * as THREE from 'three';
+import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 
 // Creating the scene
 var scene = new THREE.Scene();

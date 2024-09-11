@@ -1,5 +1,5 @@
 import * as THREE from 'three';
-import { OrbitControls } from 'https://threejs.org/examples/jsm/controls/OrbitControls.js';
+import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 //import chroma from 'https://cdn.jsdelivr.net/npm/chroma-js@2.1.0/chroma.js';
 
 let camera, scene, renderer, material;

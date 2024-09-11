@@ -1,6 +1,7 @@
 // Importing OrbitControls (make sure the path matches the version you are using)
-import { OrbitControls } from 'https://threejs.org/examples/jsm/controls/OrbitControls.js';
-import { OBJLoader } from 'https://threejs.org/examples/jsm/loaders/OBJLoader.js';
+import * as THREE from 'three';
+import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+import { OBJLoader } from 'three/addons/loaders/OBJLoader.js';
 
 let camera, scene, renderer, clock;
 let object;

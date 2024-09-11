@@ -1,6 +1,7 @@
 // Importing OrbitControls (make sure the path matches the version you are using)
-import { OrbitControls } from 'https://threejs.org/examples/jsm/controls/OrbitControls.js';
-import { OBJLoader } from 'https://threejs.org/examples/jsm/loaders/OBJLoader.js';
+import * as THREE from 'three';
+import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+import { OBJLoader } from 'three/addons/loaders/OBJLoader.js';
 
 const viewDepthMap = true;
 
@@ -23,12 +24,12 @@ function init() {
 	const ambientLight = new THREE.AmbientLight(0x404040, 3.2);
 	scene.add(ambientLight);
 
-	const directionalLight = new THREE.DirectionalLight(0xffffff, .8);
+	const directionalLight = new THREE.DirectionalLight(0xffffff, 8);
 	directionalLight.position.set(-5, 1, 0).normalize();
 	directionalLight.castShadow = true;
 	//scene.add(directionalLight);
 
-	const secondaryLight = new THREE.SpotLight(0xffffff, .8);
+	const secondaryLight = new THREE.SpotLight(0xffffff, 8);
 	secondaryLight.position.set(-5, 1, 1);
 	secondaryLight.castShadow = true;
 	secondaryLight.penumbra = 0.3;
@@ -52,7 +53,7 @@ function init() {
 	dirLight.shadow.mapSize.height = 1024;
 	scene.add(dirLight);
 
-	spotLight = new THREE.SpotLight(0xffffff, .8);
+	spotLight = new THREE.SpotLight(0xffffff, 80);
 	spotLight.name = 'Spot Light';
 	//spotLight.angle = Math.PI / 5;
 	spotLight.penumbra = 0.3;
