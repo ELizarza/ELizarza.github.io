@@ -63,7 +63,9 @@ function init() {
             console.log('model ' + percentComplete.toFixed(2) + '% downloaded');
         }
     }
-    function onError() { }
+    function onError() { 
+        console.log('model failed to load');
+    }
 
     loader.load('NameTitleCard/Models/EDDIE.obj', function (object) {
 
@@ -127,7 +129,7 @@ function init() {
     renderer = new THREE.WebGLRenderer({ antialias: true });
     renderer.setPixelRatio(window.devicePixelRatio);
     renderer.setSize(myContainerElement.offsetWidth, myContainerElement.offsetHeight);
-    renderer.setClearColor(0x9221ad, 1);
+    renderer.setClearColor(0x769FB6, 1);
     myContainerElement.appendChild(renderer.domElement);
     //document.body.appendChild(renderer.domElement);
 
