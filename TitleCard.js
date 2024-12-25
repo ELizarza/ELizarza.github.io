@@ -20,10 +20,10 @@ function init() {
     // scene
     scene = new THREE.Scene();
 
-    const ambientLight = new THREE.AmbientLight(0xcccccc, 5);
+    const ambientLight = new THREE.AmbientLight(0xcccccc, 7.5);
     scene.add(ambientLight);
 
-    const directionalLight = new THREE.DirectionalLight(0xffffff, 7.2);
+    const directionalLight = new THREE.DirectionalLight(0xffffff, 12);
     directionalLight.position.set(1, 1, 0).normalize();
     scene.add(directionalLight);
 
@@ -34,25 +34,9 @@ function init() {
 
     // Create a metallic material with a gold tint
     const metalMaterial = new THREE.MeshStandardMaterial({
-        color: 0x571b3d, // dark purple
+        color: 0x001B2E, // dark purple
         metalness: 0.9, // Fully metallic
-        roughness: 0.3 // A bit of roughness to simulate gold's reflectivity
-    });
-
-    const matteMaterial = new THREE.MeshStandardMaterial({
-        color: 0x571b3d, // dark purple
-        metalness: 0.0,
-        roughness: 0.9
-    });
-
-    const glassmaterial = new THREE.MeshPhysicalMaterial({
-        color: 0xffffff, // Adjust the color as needed
-        metalness: 0, // Glass is not metallic
-        roughness: 0, // Smooth surface
-        transmission: 1, // 0 is fully opaque, 1 is fully transparent (glass-like)
-        transparent: true, // Enable transparency
-        reflectivity: 1, // Adjust for the level of reflectivity
-        refractionRatio: 0.9, // Adjust for the level of refraction
+        roughness: 0.6 // A bit of roughness to simulate gold's
     });
 
     const loader = new OBJLoader();
@@ -120,6 +104,7 @@ function init() {
         object.position.set(0, -0.25, .5);
         rotationGroup.add(object);
         rotationGroup.scale.set(1, 1, 1.125);
+        // rotationGroup.position.x = -.25
         rotationGroup.position.z = -0.125
         rotationGroup.rotation.set(0, 3*(Math.PI/2), 0);
         scene.add(rotationGroup);
@@ -135,9 +120,11 @@ function init() {
 
     const controls = new OrbitControls(camera, renderer.domElement);
     controls.addEventListener('change', render);
+    controls.enablePan = false
     window.addEventListener('resize', onWindowResize);
     clock = new THREE.Clock();
-    controls.autoRotate = true;
+    // controls.autoRotate = true;
+    
 
     camera.aspect = myContainerElement.offsetWidth / myContainerElement.offsetHeight;
     camera.updateProjectionMatrix();
@@ -153,7 +140,6 @@ function onWindowResize() {
 function animate(){
     requestAnimationFrame(animate);
     render();
-    //controls.update();
 }
 
 function renderScene() {
