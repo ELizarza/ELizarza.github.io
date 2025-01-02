@@ -33,10 +33,14 @@
             width: 90%;
             margin: auto;
             margin-top: 2.5vh;
+            margin-bottom: 2.5vh;
             padding:10px;
-
-
         }
+        /*#end{
+            background-color: black;
+            width: 100%;
+            padding: 50px;
+        }*/
         header {
             background: #769FB6;
             color: white;
@@ -79,6 +83,7 @@
             width: 45%;
             height: auto;
             padding: 5px;
+
         }
 
         img.demo2 {
@@ -108,6 +113,13 @@
             margin-top: auto;
             margin-bottom: auto;
         }
+        footer {
+/*            width: 90%;*/
+            padding: 10px;
+            background-color: #001B2E;
+            border-top: solid 4px #769FB6; 
+            color: whitesmoke;
+        }
 
 
     </style>
@@ -130,6 +142,7 @@
             </div>
             <div id ="links">
                 <a href="https://github.com/ELizarza"><img src="imgs/github-mark.svg"></a>
+                <a href="https://www.linkedin.com/in/eduardo-lizarzaburu-5a186b2a8"><img src="imgs/Linkedin.png"></a>
                 <a href="mailto:EddieLizarzaburu@hotmail.com"><img src="imgs/email.png"></a>
             </div>
         </div>
@@ -140,8 +153,9 @@
             <h1>Welcome to My Page!</h1>
             <h3>About Me:</h3>
             <div id="box">
-                <p>I'm an aspiring software engineer from Lincoln California. I'm currently working towards a Bachelor's in Computer Science at UC Merced,
-                my current hobbies include reading, working out and playing games.</p>
+                <p>I'm a senior Computer Science Major from UC Merced and I've worked with various programming languages including C/C++, Java, Html/CSS, JavaScript and python.</p>
+                <p>I recently developed a great interest in 3D modeling, currently self-taught using blender and open to any opportunities to further develop my modeling skills.</p>
+                <p>Feel free to contact me through email or Linkedin!</p>
             </div>
         </section>
 
@@ -174,7 +188,13 @@
                     <li>Designed application’s UI and button functionality using Qt Creator</li>
                     <li>Programmed application with c++ using object orientated methods</li>
                 </ul>
-                <img class="demo" src="imgs/project1.png">
+                <div style="display: flex; margin: auto; margin-top: 2.5vh; width: 90%; justify-content: center; align-items: center;">
+                    <img class="demo2" src="imgs/project1.png">
+                    <img class="demo2" src="imgs/project2.png">
+                    <img class="demo2" src="imgs/project3.png">
+                </div>
+                <br>
+                
                 <br>
                 <a href="https://github.com/ELizarza/UC-Mapper/tree/main/qt%20proj/UCMapper">Github page</a>
             </div>
@@ -187,22 +207,22 @@
                     <li>Efficiently Split work amongst groupmates to complete tasks</li>
                     <li>Created a professional presentation to highlight our contributions</li>
                 </ul>
-                <img class="demo2" src="imgs/final_project.jpg">
-                <!-- <img class="demo" src=""> -->
+                <div style="display: flex; margin: auto; margin-top: 2.5vh; width: 90%; justify-content: center; align-items: center;">
+                    <img class="demo2" src="imgs/final_project.jpg">
+                    <img class="demo2" src="imgs/design.png">
+                </div>
                 <br>
-                <a>link to slides here</a>
+                <a href="imgs/CLOSECALL.pdf">Presentation Slides</a>
             </div>
-
         </section>
-
-        <br>
-
-        <footer>
-            <h3>More from Me!</h3>
-            <p>Contact Information: <a href="mailto:EddieLizarzaburu@hotmail.com"> Eddielizarzaburu@hotmail.com </a> <p>
-            </a>
-            <p>More Projects: <a href="https://github.com/ELizarza">My Github</a></p>
-        </footer>
     </div>
+    <footer>
+        <h2>More from Me!</h2>
+        <a href="mailto:EddieLizarzaburu@hotmail.com">Contact me</a>
+        <br>
+        <a href="https://www.linkedin.com/in/eduardo-lizarzaburu-5a186b2a8">Linkedin</a>
+        <br>
+        <a href="https://github.com/ELizarza">Github</a>
+    </footer>
 </body>
 </html>
