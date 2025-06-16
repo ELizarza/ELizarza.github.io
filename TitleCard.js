@@ -41,80 +41,6 @@ function init() {
         roughness: 0.6 // A bit of roughness to simulate gold's
     });
 
-    // const loader = new OBJLoader();
-    // // model
-    // function onProgress(xhr) {
-    //     if (xhr.lengthComputable) {
-    //         const percentComplete = xhr.loaded / xhr.total * 100;
-    //         console.log('model ' + percentComplete.toFixed(2) + '% downloaded');
-    //     }
-    // }
-    // function onError() { 
-    //     console.log('model failed to load');
-    // }
-
-    // loader.load('NameTitleCard/Models/EDDIE.obj', function (object) {
-
-    //     // attach material
-    //     object.traverse(function (child) {
-    //         if (child.isMesh) {
-    //             child.material = metalMaterial; // Apply the material to each mesh
-    //         }
-    //     });
-
-    //     // Calculate the bounding box to get model size and center
-    //     const boundingBox = new THREE.Box3().setFromObject(object);
-    //     // Center the model
-    //     const center = boundingBox.getCenter(new THREE.Vector3());
-    //     // Scale the model to a unit scale and center it to (0,0,0)
-    //     const size = boundingBox.getSize(new THREE.Vector3());
-    //     const maxDimension = Math.max(size.x, size.y, size.z);
-    //     const scale = 1.0 / maxDimension;
-    //     object.scale.set(scale, scale, scale);
-    //     object.position.set(-center.x * scale, -center.y * scale, -center.z * scale)
-
-    //     // Add the model to the scene
-    //     scene.add(object);
-    //     object.position.set(0, 0, 0.5);
-    //     rotationGroup = new THREE.Group();
-    //     rotationGroup.add(object);
-    //     render();
-    // }, onProgress, onError);
-
-    // loader.load('NameTitleCard/Models/LIZARZABURU.obj', function (object) {
-
-    //     // attach material
-    //     object.traverse(function (child) {
-    //         if (child.isMesh) {
-    //             child.material = metalMaterial; // Apply the material to each mesh
-    //         }
-    //     });
-
-    //     // Calculate the bounding box to get model size and center
-    //     const boundingBox = new THREE.Box3().setFromObject(object);
-    //     // Center the model
-    //     const center = boundingBox.getCenter(new THREE.Vector3());
-    //     // Scale the model to a unit scale and center it to (0,0,0)
-    //     const size = boundingBox.getSize(new THREE.Vector3());
-    //     const maxDimension = Math.max(size.x, size.y, size.z);
-    //     const scale = 1.0 / maxDimension;
-    //     object.scale.set(scale, scale, scale);
-    //     object.position.set(-center.x * scale, -center.y * scale, -center.z * scale)
-
-    //     // Add the model to the scene
-    //     scene.add(object);
-    //     object.position.set(0, -0.25, .5);
-    //     rotationGroup.add(object);
-    //     rotationGroup.scale.set(1, 1, 1.125);
-    //     // rotationGroup.position.x = -.25
-    //     rotationGroup.position.z = -0.125
-    //     rotationGroup.rotation.set(0, 3*(Math.PI/2), 0);
-    //     scene.add(rotationGroup);
-    //     render();
-    // }, onProgress, onError);
-
-
-
     // Instantiate a loader
     const loader = new GLTFLoader();
 
@@ -207,7 +133,7 @@ function renderScene() {
 function render() {
     const delta = clock.getDelta();
     t += 1 * delta;
-    myObject.rotation.z += 0.75 * delta;
+    myObject.rotation.z += 0.5 * delta;
     //console.log(rotationGroup.rotation);
     renderScene();
 }
