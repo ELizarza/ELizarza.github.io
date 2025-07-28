@@ -2,144 +2,6 @@
 <html>
 <head>
     <title>The Offical Site of Eddie Lizarzaburu</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #BFD3C1;
-        }
-        .container {
-            width: 85%;
-            margin: auto;
-            overflow: hidden;
-            color: #001B2E;
-            min-width: 290px;
-        }
-        body #showcase h1{
-            font-size: 35px;
-        }
-        body h3{
-            font-size: 25px;
-        }
-        body #details h1{
-            font-size: 30px;
-        }
-        body #box{
-            border-block: solid;
-            border-left-style: solid;
-            border-right-style: solid;
-            border-color: #FFE5D4;
-            border-radius: 2rem;
-            overflow: hidden;
-            background-color: #A2BDCD;
-            width: 90%;
-            margin: auto;
-            margin-top: 2.5vh;
-            margin-bottom: 2.5vh;
-            padding:1rem;
-        }
-        div.imgContainer{
-            display: flex;
-            margin: auto;
-            margin-top: 2.5vh;
-            width: 90%;
-            justify-content: center;
-            align-items: center;
-        }
-        header {
-            background: #769FB6;
-            color: white;
-            padding-top: 2vh;
-            padding-bottom: 2vh;
-            min-height: 80px;
-            height: 17vh;
-            border-bottom: #EFC7C2 4px solid;
-        }
-        header ul {
-            padding: 0;
-            margin: 0;
-            list-style: none;
-            overflow: hidden;
-        }
-        header li {
-            float: left;
-            display: inline;
-            padding: 0 20px 0 20px;
-        }
-        header #branding {
-            float: left;
-        }
-        header #links {
-            float: right;
-            
-        }
-        img {
-            width: 3.5vw;
-            height: auto;
-            padding-right: 0.5rem;
-            padding-left: 0.5rem;
-            margin-top: auto;
-            margin-bottom: auto;
-            min-width: 30px;
-            min-height: 30px;
-        }
-
-        img.demo {
-            width: 40vw;
-            height: 65vh;
-            /* padding: 5px; */
-        }
-
-        img.demo2 {
-            width: auto;
-            height: 35vh;
-            /* padding: 5px; */
-        }
-
-        img.demo3 {
-            width: 45vw;
-            height: auto;
-            /* padding: 5px; */
-        }
-
-        img.demo3 {
-            width: 45vw;
-            height: auto;
-            padding: 5px;
-        }
-
-        header #branding h1 {
-            margin: 0;
-        }
-        header nav {
-            float: right;
-            margin-top: 10px;
-        }
-
-        div #branding {
-            width: 16vw;
-            height: 17vh;
-            min-height: 80px;
-            min-width: 155px;
-        }
-
-        canvas {
-            width: 200px;
-            height: auto;
-            margin-top: auto;
-            margin-bottom: auto;
-        }
-        footer {
-/*            width: 90%;*/
-            padding: 10px;
-            background-color: #001B2E;
-            border-top: solid 4px #769FB6; 
-            color: whitesmoke;
-        }
-
-
-    </style>
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -147,6 +9,7 @@
 </head> 
 <body>
     <header>
+        <link href="default.css" rel="stylesheet" type="text/css">
         <div class="container", style = "width: 95%;">
             <div id="branding">
                 <!-- <h1><span class="highlight">Eddie</span> <span class = "highlight2">Lizarzaburu</span></h1> -->
@@ -162,9 +25,9 @@
                 <script type="module" src="TitleCard.js"></script>
             </div>
             <div id ="links">
-                <a href="https://github.com/ELizarza"><img src="imgs/github-mark.svg"></a>
-                <a href="https://www.linkedin.com/in/eduardo-lizarzaburu-5a186b2a8"><img src="imgs/Linkedin.png"></a>
-                <a href="mailto:EddieLizarzaburu@hotmail.com"><img src="imgs/email.png"></a>
+                <a href="https://github.com/ELizarza"><img src="imgs/icons/github-mark.svg"></a>
+                <a href="https://www.linkedin.com/in/eduardo-lizarzaburu-5a186b2a8"><img src="imgs/icons/Linkedin.png"></a>
+                <a href="mailto:EddieLizarzaburu@hotmail.com"><img src="imgs/icons/email.png"></a>
             </div>
         </div>
     </header>
@@ -185,6 +48,23 @@
 
         <section id="details">
             <h1>Completed Projects</h1>
+
+            <div id="box">
+                <h2 style="text-align: center;">The LLNL Data Science Challenge</h2>
+                <p style="text-align: center; font-weight: bold;">July 2025</p>
+                <p> worked with three LLNL interns from diverse fields for two weeks to build and train a Unet 3D Convolution model. 
+                    We generated amodal masks from video data and used a Python notebook with GPU acceleration to train the model 
+                    for both binary masks and RGB predictions. I then presented our findings to management, highlighting potential 
+                    improvements for the NCA model.
+                </p>
+                <div class="imgContainer">
+                    <img class="demo3" src="imgs/DSC/DSC_Poster.png">
+                </div>
+                <div class="imgContainer">
+                    <img class="demo3" src="imgs/DSC/DSC_award1.png">
+                </div>
+            </div>
+
             <div id="box">
                 <h2 style="text-align: center;">The Advanced Image Analysis Platform for SanDisk</h2>
                 <p style="text-align: center; font-weight: bold;">January 2025 - May 2025</p>
@@ -246,8 +126,8 @@
                     <li>Programmed application with c++ using object orientated methods</li>
                 </ul>
                 <div class="imgContainer">
-                    <img class="demo" src="imgs/project2.png">
-                    <img class="demo" src="imgs/project3.png">
+                    <img class="demo" src="imgs/mapper/project2.png">
+                    <img class="demo" src="imgs/mapper/project3.png">
                 </div>
                 <br>
                 
@@ -265,11 +145,11 @@
                     <li>Created a professional presentation to highlight our contributions</li>
                 </ul>
                 <div class="imgContainer">
-                    <img class="demo2" src="imgs/final_project.jpg">
-                    <img class="demo2" src="imgs/design.png">
+                    <img class="demo2" src="imgs/close_call/final_project.jpg">
+                    <img class="demo2" src="imgs/close_call/design.png">
                 </div>
                 <br>
-                <a href="imgs/CLOSECALL.pdf">Presentation Slides</a>
+                <a href="imgs/close_call/CLOSECALL.pdf">Presentation Slides</a>
             </div>
         </section>
     </div>
