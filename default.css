@@ -3,6 +3,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #BFD3C1;
+    font-size: 14pt;
 }
 .container {
     width: 85%;
@@ -98,10 +99,10 @@ img.demo3 {
     /* padding: 5px; */
 }
 
-img.demo3 {
-    width: 45vw;
-    height: auto;
-    padding: 5px;
+img.demo4 {
+    width: auto;
+    height: 45vh;
+    /* padding: 5px; */
 }
 
 header #branding h1 {
