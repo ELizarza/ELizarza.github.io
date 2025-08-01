@@ -73,35 +73,37 @@ header #links {
 img {
     width: 3.5vw;
     height: auto;
-    padding-right: 0.5rem;
-    padding-left: 0.5rem;
+    margin-right: 1vw;
+    margin-left: 1vw;
     margin-top: auto;
     margin-bottom: auto;
     min-width: 30px;
     min-height: 30px;
 }
 
-img.demo {
-    width: 40vw;
-    height: 65vh;
-    /* padding: 5px; */
-}
-
-img.demo2 {
-    width: auto;
-    height: 35vh;
-    /* padding: 5px; */
-}
-
-img.demo3 {
-    width: 45vw;
+img.demoFull {
+    border-block: solid;
+    border-left-style: solid;
+    border-right-style: solid;
+    border-color: #13293B;
+    border-radius: 0.25vw;
+    overflow: hidden;
+    width: 60vw;
     height: auto;
     /* padding: 5px; */
 }
 
-img.demo4 {
-    width: auto;
-    height: 45vh;
+img.demoHalf {
+    border-block: solid;
+    border-left-style: solid;
+    border-right-style: solid;
+    border-color: #13293B;
+    border-radius: 0.25vw;
+    overflow: hidden;
+    width: 29.25vw;
+    height: auto;
+    margin-right: 0.5vw;
+    margin-left: 0.5vw;
     /* padding: 5px; */
 }
 
