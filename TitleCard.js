@@ -30,7 +30,7 @@ function init() {
     scene.add(directionalLight);
 
     
-    const textureMap = new THREE.TextureLoader().load('Week4/textures/uv_grid_opengl.jpg');
+    const textureMap = new THREE.TextureLoader().load('/Week4/textures/uv_grid_opengl.jpg');
     const textureMaterial = new THREE.MeshStandardMaterial({ map: textureMap });
     
 

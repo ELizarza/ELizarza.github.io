@@ -32,10 +32,19 @@
         </div>
     </header>
 
+    <div class="menu">
+        <div class="hover-box">
+            <a href="/">About Me</a>
+        </div>
+        <div class="hover-box">
+            <a href="Projects/">Projects</a>
+        </div>
+    </div>
+
     <div class="container">
         <section id="showcase">
-            <h1>Welcome to My Page!</h1>
-            <h3>About Me:</h3>
+            <h1 style="text-align: center;">The Offical Site of Eddie Lizarzaburu</h1>
+            <h1>About Me:</h1>
             <div id="box">
                 <p>
                     I'm a Computer Science Major from UC Merced and have been working with various programming languages and libraries for 5 years now!
@@ -43,124 +52,6 @@
                     I recently developed a great interest in 3D modeling, currently self-taught using blender and open to any opportunities to further develop my modeling skills.
                 </p>
                 <p>Feel free to contact me at <a href="eddielizarzaburu@gmail.com">eddielizarzaburu@gmail.com</a> or <a href="https://www.linkedin.com/in/eduardo-lizarzaburu-5a186b2a8">Linkedin!</a></p>
-            </div>
-        </section>
-
-        <section id="details">
-            <h1>Completed Projects</h1>
-
-            <div id="box">
-                <h2 style="text-align: center;">The LLNL Data Science Challenge</h2>
-                <p style="text-align: center; font-weight: bold;">July 2025</p>
-                <p> 
-                    The Data Science Challenge at Lawrence Livermore National Lab is a two-week intensive program 
-                    focused on tackling real-world data science problems through seminars and expert mentorship. 
-                </p>
-                <p>
-                    This year's challenge involved developing an AI computer vision model to reconstruct fully visible 
-                    'amodal' objects from partially obscured 'modal' inputs. As part of a team of four interns, I focused 
-                    on building and training a Unet 3D Convolution model for video input. 
-                </p>
-                <p>
-                    I presented our findings to management, outlining potential optimizations swapping the Unet model 
-                    for a Neural Cellular Automata model that could reduce model parameters by nine hundred percent. 
-                    These improvements have the potential to enhance the accuracy and efficiency of object recognition 
-                    in LLNL’s fully autonomous lab equipment.
-                </p>
-                <div class="imgContainer">
-                    <img class="demoFull" src="imgs/DSC/DSC_Poster.png">
-                </div>
-                <div class="imgContainer">
-                    <img class="demoHalf" src="imgs/DSC/DSC_award1.png">
-                    <img class="demoHalf" src="imgs/DSC/Team.jpg">
-                </div>
-            </div>
-
-            <div id="box">
-                <h2 style="text-align: center;">The Advanced Image Analysis Platform for SanDisk</h2>
-                <p style="text-align: center; font-weight: bold;">January 2025 - May 2025</p>
-                <p>A Computer Vision Interface designed for segmenting and analyzing electron microscope images to aid with detecting defectings in SanDisk's compoments.
-                    This project was designed by my team as part of the Innovate to Grow event at UC Merced.
-                </p>
-                <p>The Advanced Image Analysis Platform is a computer vision GUI created with PySide6 that focuses on segmenting images into masks, 
-                    determining mask size and measuring distance between masks. The AIA Platform requires no prior training and provides a selection
-                    of models of varying computational load.</p>
-                <p>The platform offers a wide variety of tools from automatic/manual masking, annotating masks, to image adjustments such as sharpening and brightness. 
-                    All adjustments and masks made can be exported and shared with others, allowing for the efficient analysis of component images all in one app.</p>
-                <p>My role in this project included:</p>
-                <ul>
-                    <li>Developing robust and modular interfaces to connect computer vision model and various tools to GUI elements</li>
-                    <li>Demonstrating new features to client through online meetings</li>
-                    <li>Presenting the final deliverable to panel of investors and researchers to argue the importance of the AIA platform</li>
-                </ul>
-                <div class="imgContainer">
-                    <img class="demoHalf" src="imgs/AIA/AIA_example.png">
-                    <img class="demoHalf" src="imgs/AIA/AIA_annotation_example.png">
-                </div>
-                <div class="imgContainer">
-                    <img class="demoHalf" src="imgs/AIA/AIA_Manual_example.png">
-                    <img class="demoHalf" src="imgs/AIA/AIA_adjustment_example.png">
-                </div>
-                <br>
-                <a href="https://i2g.ucmerced.edu/">Innovate to Grow Site</a>
-                <br>
-                <a href="https://github.com/AnthonyMichaelTDM/Advanced-Image-Analysis-Platform">Github Page</a>
-            </div>
-
-            <div id="box">
-            <h2 style="text-align: center;">Open Avenues Web-Based 3D Visualization Tool</h2>
-            <p style="text-align: center; font-weight: bold;">April 2024</p>
-            <p>At my internship with Open Avenues I completed an Interactive Web-Based 3D Visualization Tool and:</p>
-            <ul>
-                <li>Worked with industry professionals to gain insightful experience</li>
-                <li>Used WebGL and Three.js to render 3D models in a web browser</li>
-                <li>Developed and presented a professional demo to showcase</li>
-            </ul>
-
-            <p>All project deliverables can be viewed here:</p>
-
-            <a href="Week1.html">Week 1</a>
-            <a href="Week2.html">Week 2</a>
-            <a href="Week3.html">Week 3</a>
-            <a href="Week4/index.html">Week 4</a>
-            <a href="Week4/class06.html">Week 5</a>
-            <a href="Week6/index.html">Week 6</a>
-            <!-- <a href="fullscreentest.html">week 10000</a> -->
-            </div>
-
-            <div id="box">
-                <h2 style="text-align: center;">Object Oriented Programming Project: UCMapper</h2>
-                <p style="text-align: center; font-weight: bold;">March 2024 - April 2024</p>
-                <p>UC Mapper: A Qt project that allows UC Merced Students to set up a schedule and determine an optimal path to their classes and extracurricular activities.</p>
-                <ul>
-                    <li>Designed application’s UI and button functionality using Qt Creator</li>
-                    <li>Programmed application with c++ using object orientated methods</li>
-                </ul>
-                <div class="imgContainer">
-                    <img class="demoFull" src="imgs/mapper/project1.png">
-                    <!-- <img class="demoHalf" src="imgs/mapper/project3.png"> -->
-                </div>
-                <br>
-                
-                <br>
-                <a href="https://github.com/ELizarza/UC-Mapper/tree/main/qt%20proj/UCMapper">Github page</a>
-            </div>
-
-            <div id="box">
-                <h2 style="text-align: center;">Human-Computer Interactions Project: Close Call</h2>
-                <p style="text-align: center; font-weight: bold;">October 2024 - November 2024</p>
-                <p>Close Call: A group project where I developed the main functionality and code of a device meant to assist the visually impaired with avoiding unexpected obstacles.</p>
-                <ul>
-                    <li>Worked as a team to develop and prototype interactive distance and velocity measuring device</li>
-                    <li>Efficiently Split work amongst groupmates to complete tasks</li>
-                    <li>Created a professional presentation to highlight our contributions</li>
-                </ul>
-                <div class="imgContainer">
-                    <img class="demoHalf" src="imgs/close_call/final_project.jpg">
-                    <img class="demoHalf" src="imgs/close_call/design.png">
-                </div>
-                <br>
-                <a href="imgs/close_call/CLOSECALL.pdf">Presentation Slides</a>
             </div>
         </section>
     </div>
