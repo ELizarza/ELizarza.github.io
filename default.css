@@ -44,6 +44,12 @@ body {
     a {color: #FFE5B4;}
     font-size: 20pt;
 }
+.welcome-text {
+    font-size: 24pt;
+}
+body p, ul {
+    font-size: 16pt;
+}
 body #showcase h1{
     font-size: 35px;
 }
