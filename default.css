@@ -46,6 +46,7 @@ body {
 }
 .welcome-text {
     font-size: 24pt;
+    max-width: 750px;
 }
 body p, ul {
     font-size: 16pt;
@@ -113,8 +114,8 @@ header #links {
 img {
     width: 3.5vw;
     height: auto;
-    margin-right: 1vw;
-    margin-left: 1vw;
+    margin-right: 5px;
+    margin-left: 5px;
     margin-top: auto;
     margin-bottom: auto;
     min-width: 30px;
